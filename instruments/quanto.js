@@ -18,8 +18,8 @@ module.exports = function (config) {
 
   function getMarginPointsUsedByOrder(order, excludeExtraForCross) {
     if (order.orderType === "TGT")  return 0
-    var quantity = toBeFilled(order)
-    var cushion  = getCushion(order)
+    var quantity = instrument.toBeFilled(order)
+    var cushion  = instrument.getCushion(order)
     var maxStopPoints;
     if (order.orderType === "STP" && order.crossMargin && excludeExtraForCross) {
       maxStopPoints = sinful.add(config.crossMarginInitialStop, cushion);

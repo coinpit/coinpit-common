@@ -5,17 +5,16 @@ var instruments = require('./instruments')
 module.exports = (function () {
   var marginUtil = {}
 
-  // marginUtil.computeAvailableMarginCoverageIfCrossShifted = function (orders, profitAndLoss, availableMargin, bands) {
+  // this will assume cross stop with initial cross margin
   marginUtil.getMinCrossStopMargin = function (orders, profitAndLoss, positions, availableMargin, bands) {
     return marginUtil.computeAvailableMargin(orders, profitAndLoss, positions, availableMargin, bands, true)
   }
 
-  // marginUtil.computeAvailableMarginCoverage = function (orders, profitAndLoss,positions, availableMargin, bands) {
+  // this will assume cross stop using full margin based on entry and stop price
   marginUtil.getMaxCrossStopMargin = function (orders, profitAndLoss, positions, availableMargin, bands) {
     return marginUtil.computeAvailableMargin(orders, profitAndLoss, positions, availableMargin, bands, false)
   }
 
-  //orders, profitAndLoss, availableMargin, bands, ifCrossTightenToMax, positions
   marginUtil.computeAvailableMargin = function (orders, profitAndLoss, positions, availableMargin, bands, isMinCrossStop) {
     affirm(orders, 'Orders not present')
     affirm(!profitAndLoss || (typeof profitAndLoss.pnl === 'number'), 'invalid Profit and loss ' + JSON.stringify(profitAndLoss))

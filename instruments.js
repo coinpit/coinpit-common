@@ -6,7 +6,7 @@ module.exports = (function () {
   var contracts   = {}
   var symbols     = []
   var configs     = {}
-  var type        = {
+  instruments.type        = {
     inverse: require("./instruments/inverse"),
     quanto : require("./instruments/quanto")
   }
@@ -31,7 +31,7 @@ module.exports = (function () {
   instruments.add = function (config) {
     affirm(config.type === 'inverse' || config.type === 'quanto', 'Invalid instrument type')
     if (contracts[config.symbol]) return console.log(config.symbol, 'is already present')
-    contracts[config.symbol] = type[config.type](config)
+    contracts[config.symbol] = instruments.type[config.type](config)
     symbols.push(config.symbol)
     configs[config.symbol] = config
   }

@@ -19,7 +19,7 @@ module.exports = function (config) {
 
   instrument.calculateMarginRequiredByOrder = function (order, bands, excludeExtraForCross) {
     if (order.orderType === "TGT")  return 0
-    var quantity = toBeFilled(order)
+    var quantity = instrument.toBeFilled(order)
     if (order.orderType === 'STP' && order.crossMargin && excludeExtraForCross) {
       return getMarginRequiredForInverseCross(order)
     }
@@ -33,7 +33,7 @@ module.exports = function (config) {
     affirm(bands && bands[config.symbol] && bands[config.symbol].min, "min not defined on bands: " + JSON.stringify(bands))
     var price = order.price || bands[config.symbol].min
     if (order.side === 'buy') price = Math.min(price, bands[config.symbol].min)
-    var cushion             = getCushion(order)
+    var cushion             = instrument.getCushion(order)
     var stopPoints          = order.crossMargin ? config.crossMarginInitialStop : order.stopPrice
     var maxStopPoints       = sinful.add(stopPoints, cushion)
     var signedMaxStopPoints = sinful.mul(instrument.positionSide[order.side], maxStopPoints)
@@ -42,9 +42,9 @@ module.exports = function (config) {
   }
 
   function getMarginRequiredForInverseCross(order) {
-    var quantity           = toBeFilled(order)
+    var quantity           = instrument.toBeFilled(order)
     var stopSign           = order.side === 'sell' ? -1 : 1
-    var cushion            = getCushion(order)
+    var cushion            = instrument.getCushion(order)
     var maxStopPoint       = sinful.add(config.crossMarginInitialStop, cushion)
     var signedMaxStopPoint = sinful.mul(stopSign, maxStopPoint)
     var stopPrice          = sinful.add(order.entryPrice, signedMaxStopPoint)
