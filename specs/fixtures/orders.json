@@ -1,0 +1,94 @@
+{
+  "inverse": {
+    "cross"                      : {
+      "uuid"                : "a88d61a0-d767-11e6-accb-1cdf097ffcb9",
+      "userid"              : "moVB8e8oWX1oKjaaesdimAGqJHxjih8kjU",
+      "side"                : "sell",
+      "quantity"            : 7,
+      "filled"              : 0,
+      "cancelled"           : 0,
+      "price"               : 483.8,
+      "normalizedPrice"     : 103348491,
+      "averagePrice"        : 0,
+      "entryTime"           : 1484075102100133,
+      "eventTime"           : 1484075089082537,
+      "status"              : "open",
+      "entryOrder"          : {
+        "a880de80-d767-11e6-a50c-5820199e8e7d": 1
+      },
+      "orderType"           : "STP",
+      "stopPrice"           : 15,
+      "targetPrice"         : "NONE",
+      "instrument"          : "BTCUSD7F27",
+      "oco"                 : "a88d61a1-d767-11e6-a38c-a39275e7bc00",
+      "maxStop"             : 483,
+      "entryPrice"          : 906,
+      "entryAmount"         : 386331742,
+      "commission"          : 10000,
+      "reward"              : 0,
+      "cushion"             : 1,
+      "reservedTicks"       : 0,
+      "crossMargin"         : true,
+      "normalizedEntryPrice": 55187638,
+      "normalizedMaxStop"   : 103519669
+    },
+    "sell"                       : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "sell",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750
+    },
+    "buy"                        : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "buy",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750
+    },
+    "target"                       : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "sell",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750,
+      "orderType"  : "TGT"
+    },
+    "limit"                       : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "sell",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750,
+      "orderType"  : "LMT",
+      "marginPerQty" : 2
+    },
+    "buy2"                        : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "buy",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750,
+      "cushion"    : 1,
+      "crossMargin": true,
+      "price"      : 500
+    },
+    "buy3"                        : {
+      "instrument" : "BTCUSD7F27",
+      "side"       : "buy",
+      "quantity"   : 7,
+      "filled"     : 0,
+      "cancelled"  : 0,
+      "entryAmount": 396341750,
+      "cushion"    : 1,
+      "crossMargin": false,
+      "price"      : 500,
+      "stopPrice"  : 10
+    }
+  }
+}

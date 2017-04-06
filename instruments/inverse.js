@@ -10,11 +10,11 @@ module.exports = function (config) {
 
 
   instrument.positionSide = { buy: 1, sell: -1 }
-  var contractusdvalue = config.contractusdvalue * 1e8
+  instrument.contractusdvalue = config.contractusdvalue * 1e8
 
   instrument.getNormalizedPrice = function (price) {
     if (typeof price !== 'number') return price
-    return Math.round(contractusdvalue / price)
+    return Math.round(instrument.contractusdvalue / price)
   }
 
   instrument.calculateMarginRequiredByOrder = function (order, bands, excludeExtraForCross) {

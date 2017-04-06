@@ -23,6 +23,7 @@ module.exports = function (config) {
   affirm(!isNaN(base.config.uplDecimalPlaces) && base.config.uplDecimalPlaces >= 0, 'Invalid uplDecimalPlaces ' + base.config.uplDecimalPlaces)
   affirm(base.config.externalFeed, 'ExternalFeed should be present')
 
+  base.symbol = config.symbol
   base.isExpired = function () {
     return base.config.status === 'expired'
   }
