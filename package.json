@@ -1,0 +1,28 @@
+{
+  "name": "coinpit-common",
+  "version": "0.0.1",
+  "description": "common utils for coinpit",
+  "main": "src/*.js",
+  "scripts": {
+    "test": "mocha specs/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coinpit/coinpit-common.git"
+  },
+  "keywords": [
+    "coinpit",
+    "margin",
+    "exchange",
+    "futures"
+  ],
+  "author": "coinpit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coinpit/coinpit-common/issues"
+  },
+  "homepage": "https://github.com/coinpit/coinpit-common#readme",
+  "devDependencies": {
+    "expect": "^1.20.2"
+  }
+}
