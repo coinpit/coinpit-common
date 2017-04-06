@@ -2,7 +2,6 @@ var expect      = require('expect.js')
 var Quanto      = require('../../instruments/quanto')
 var instruments = require("../fixtures/instruments.json")
 var orders      = require("../fixtures/orders.json")
-var fixtures    = require("../fixtures/inverse.spec.json")
 
 describe('quanto instruments', function () {
 

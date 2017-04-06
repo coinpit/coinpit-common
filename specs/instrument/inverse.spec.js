@@ -2,7 +2,6 @@ var expect = require('expect.js')
 var Inverse = require('../../instruments/inverse')
 var instruments = require("../fixtures/instruments.json")
 var orders = require("../fixtures/orders.json")
-var fixtures = require("./../fixtures/inverse.spec.json")
 
 describe('Inverse type instrument ', function() {
   describe('Invalid config for instantiating inverse', function() {
