@@ -245,6 +245,20 @@ describe('Inverse type instrument ', function() {
       expect(value).to.be.eql(15746423)
     })
 
+    it("should return 0 margin required if max stop is tighten beyond entry price for buy stop order.", function(){
+      var order = orders.inverse.maxStopTightenBeyondEntryBuy
+      var inverse = Inverse(instruments[order.instrument])
+      var value = inverse.calculateMarginRequiredByOrder(order, {}, true)
+      expect(value).to.be.eql(0)
+    })
+
+    it("should return 0 margin required if max stop is tighten beyond entry price for sell stop order.", function(){
+      var order = orders.inverse.maxStopTightenBeyondEntrySell
+      var inverse = Inverse(instruments[order.instrument])
+      var value = inverse.calculateMarginRequiredByOrder(order, {}, true)
+      expect(value).to.be.eql(0)
+    })
+
   })
 
 

@@ -25,7 +25,10 @@ module.exports = function (config) {
     }
 
     if (order.orderType === 'STP') {
-      return Math.abs(sinful.sub(order.entryAmount, sinful.mul(quantity, order.normalizedMaxStop)))
+      var exitAmount = sinful.mul(quantity, order.normalizedMaxStop)
+      var diff = sinful.sub(order.entryAmount, exitAmount)
+      var signedDiff = sinful.multiply(instrument.positionSide[order.side], diff)
+      return Math.max(0, signedDiff)
     }
     if (order.marginPerQty) {
       return sinful.mul(order.marginPerQty, quantity)

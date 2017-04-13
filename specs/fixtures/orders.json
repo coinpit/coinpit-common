@@ -89,6 +89,28 @@
       "crossMargin": false,
       "price"      : 500,
       "stopPrice"  : 10
+    },
+    "maxStopTightenBeyondEntryBuy": {
+      "instrument":  "BTCUSD7F27",
+      "side":        "buy",
+      "orderType":   "STP",
+      "quantity":    1,
+      "entryPrice": 1200,
+      "entryAmount": 41666667,
+      "price": 1190,
+      "maxStop": 1188,
+      "normalizedMaxStop":42087542
+    },
+    "maxStopTightenBeyondEntrySell": {
+      "instrument":  "BTCUSD7F27",
+      "side":        "sell",
+      "orderType":   "STP",
+      "quantity":    1,
+      "entryPrice": 1200,
+      "entryAmount": 41666667,
+      "price": 1210,
+      "maxStop": 1212,
+      "normalizedMaxStop":41254125
     }
   }
 }
