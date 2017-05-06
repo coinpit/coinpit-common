@@ -29,6 +29,7 @@ module.exports = function (config) {
   }
 
   base.calculateCommissionOrReward = function(commissionOrReward, quantity, price) {
+    if(quantity === 0) return 0
     affirm(commissionOrReward === 'commission' || commissionOrReward === 'reward', "commission or reward expected")
     var commissionRate = base.config[commissionOrReward]
     return commissionRate > -1 && commissionRate <= 1 ? Math.round(base.getNormalizedPrice(price) * quantity * commissionRate) : quantity * commissionRate;
