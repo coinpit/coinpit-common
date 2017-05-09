@@ -1,0 +1,31 @@
+{
+  "getAuthorization": {
+    "apikey": {
+      "name":          "k4",
+      "role":          "trade",
+      "userid":        "msupsAQFexFrGpfrxXGSvNUqUwNRRwSc3s",
+      "publicKey":     "503dd967573b1314c3d5e2e40b70a6a4d28c3a1e28e1d38d46188ca7173abee8",
+      "secretKey":     "65da6e0c05d42a9c8fcde888c1d8f85a392fc4451f9c342169800fd43e964ed6503dd967573b1314c3d5e2e40b70a6a4d28c3a1e28e1d38d46188ca7173abee8",
+      "authorization": "IJuPTfYRtyuC+wt1OfgYRjTDCDC+mZ93xcLuqOsWtGKzaS1iHq7A2E9uF0PdTli7LtP14clALp19NyTq4wSl0HA="
+    },
+    "body":   [
+      {
+        "userid":      "msupsAQFexFrGpfrxXGSvNUqUwNRRwSc3s",
+        "side":        "sell",
+        "quantity":    1,
+        "price":       1700.8,
+        "orderType":   "LMT",
+        "clientid":    "9764b759-53b9-4a71-8591-78cf18dbe616",
+        "stopPrice":   15.7,
+        "crossMargin": false,
+        "targetPrice": "NONE",
+        "postOnly":    false,
+        "instrument":  "MBTCUSD7K090310"
+      }
+    ],
+    "uri":    "/order",
+    "method": "POST",
+    "nonce":  1494299047138,
+    "result": "SIGN msupsAQFexFrGpfrxXGSvNUqUwNRRwSc3s.k4:uTiLhZKT3t+YGrXc5YmSNFv9G22KTriNp/dVzhq5MSzj8vc0uAGzPnrKeI6HpgfXdIamoZLZNse2sFnUsUDECg=="
+  }
+}
