@@ -1,6 +1,6 @@
 {
   "name": "coinpit-common",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "common utils for coinpit",
   "main": "index.js",
   "scripts": {

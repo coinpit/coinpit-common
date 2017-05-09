@@ -1,8 +1,8 @@
 var expect     = require('expect.js')
-var ZKA = require('../ZKA-util')
-var fixtures   = require('./fixtures/ZKA-util.spec.json')
+var ZKA = require('../zka-util')
+var fixtures   = require('./fixtures/zka-util.spec.json')
 
-describe('ZKA-util', function () {
+describe('zka-util', function () {
 
   it('should create header for authentication using api key', function () {
     var test       = fixtures.getAuthorization
