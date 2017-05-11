@@ -12,7 +12,8 @@ module.exports = function (userId, apiKeyName, secretKey) {
   util.getAuthorization = function (method, uri, body, nonce) {
     affirm(method, 'method undefined')
     affirm(uri, 'uri undefined')
-    nonce = nonce || Date.now()
+    affirm(nonce, 'Nonce expected')
+
     var message   = JSON.stringify({ method: method, uri: uri, body: body, nonce: nonce })
     var signature = util.sign(message)
     return "SIGN " + userId + "." + apiKeyName + ":" + signature
