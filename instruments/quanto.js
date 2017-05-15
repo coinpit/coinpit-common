@@ -1,6 +1,6 @@
 var affirm         = require("affirm.js")
 var BaseInstrument = require('./BaseInstrument')
-var sinful         = require('sinful-math')
+var sinful         = require('sinful-math.js')
 
 module.exports = function (config) {
   var instrument          = BaseInstrument(config)

@@ -1,7 +1,7 @@
 var affirm         = require('affirm.js')
 var mangler        = require('mangler')
 var BaseInstrument = require('./BaseInstrument')
-var sinful         = require('sinful-math')
+var sinful         = require('sinful-math.js')
 
 module.exports = function (config) {
   var instrument    = BaseInstrument(config)
