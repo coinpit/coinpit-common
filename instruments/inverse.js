@@ -25,6 +25,10 @@ module.exports = function (config) {
     }
 
     if (order.orderType === 'STP') {
+      if(order.normalizedMaxStop <= 0) {
+        console.log("Max stop must be positive.", JSON.stringify(order))
+        throw new Error("Max stop must be positive.")
+      }
       var exitAmount = sinful.mul(quantity, order.normalizedMaxStop)
       var diff = sinful.sub(order.entryAmount, exitAmount)
       var signedDiff = sinful.multiply(instrument.positionSide[order.side], diff)

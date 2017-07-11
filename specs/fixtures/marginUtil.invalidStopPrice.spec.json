@@ -1,0 +1,314 @@
+{
+  "nullPrice": {
+    "orders":      {
+      "BTCUSD7N14":      {
+        "e7c775c0-65ee-11e7-83e9-8cdd6f2990e2": {
+          "uuid":                 "e7c775c0-65ee-11e7-83e9-8cdd6f2990e2",
+          "userid":               "miqHcgxszTkcaQggGoK4MYDPekTeutihMA",
+          "side":                 "buy",
+          "quantity":             1,
+          "filled":               0,
+          "cancelled":            0,
+          "price":                null,
+          "normalizedPrice":      0,
+          "averagePrice":         0,
+          "entryTime":            1499789682537718,
+          "eventTime":            1499746242332943,
+          "status":               "open",
+          "entryOrder":           {
+            "e5cf2830-65ee-11e7-820e-73a34e108fcc": 1
+          },
+          "orderType":            "STP",
+          "targetPrice":          "NONE",
+          "instrument":           "BTCUSD7N14",
+          "oco":                  "e7c79cd0-65ee-11e7-a973-0766fe412e5e",
+          "maxStop":              null,
+          "entryPrice":           2308.2,
+          "entryAmount":          4332380,
+          "commission":           0.0005,
+          "reward":               0,
+          "cushion":              2,
+          "reservedTicks":        2,
+          "crossMargin":          false,
+          "normalizedEntryPrice": 4332380,
+          "normalizedMaxStop":    0
+        },
+        "e7c79cd0-65ee-11e7-a973-0766fe412e5e": {
+          "uuid":                 "e7c79cd0-65ee-11e7-a973-0766fe412e5e",
+          "userid":               "miqHcgxszTkcaQggGoK4MYDPekTeutihMA",
+          "side":                 "buy",
+          "quantity":             1,
+          "filled":               0,
+          "cancelled":            0,
+          "price":                "NONE",
+          "normalizedPrice":      "NONE",
+          "averagePrice":         0,
+          "entryTime":            1499746242333336,
+          "eventTime":            1499746242333336,
+          "status":               "open",
+          "entryOrder":           {
+            "e5cf2830-65ee-11e7-820e-73a34e108fcc": 1
+          },
+          "orderType":            "TGT",
+          "targetPrice":          "NONE",
+          "instrument":           "BTCUSD7N14",
+          "oco":                  "e7c775c0-65ee-11e7-83e9-8cdd6f2990e2",
+          "entryPrice":           2308.2,
+          "entryAmount":          4332380,
+          "commission":           0.0005,
+          "reward":               0,
+          "cushion":              2,
+          "reservedTicks":        2,
+          "crossMargin":          false,
+          "normalizedEntryPrice": 4332380
+        }
+      },
+      "BTCUSD7N21":      {},
+      "MBTCUSD7N111615": {},
+      "MBTCUSD7N111620": {}
+    },
+    "positions":   {
+      "BTCUSD7N14": {
+        "userid":       "miqHcgxszTkcaQggGoK4MYDPekTeutihMA",
+        "instrument":   "BTCUSD7N14",
+        "averagePrice": 2308.2,
+        "quantity":     -1,
+        "entryAmount":  4332380,
+        "commission":   0
+      }
+    },
+    "margin":      23479383
+
+  },
+  "zeroPrice": {
+    "orders":      {
+      "BTCUSD7N14":      {
+        "e7c70090-65ee-11e7-9af1-f4f5db91850d": {
+          "uuid":                 "e7c70090-65ee-11e7-9af1-f4f5db91850d",
+          "userid":               "moVB8e8oWX1oKjaaesdimAGqJHxjih8kjU",
+          "side":                 "sell",
+          "quantity":             1,
+          "filled":               0,
+          "cancelled":            0,
+          "price":                0,
+          "normalizedPrice":      null,
+          "averagePrice":         0,
+          "entryTime":            1499789711820546,
+          "eventTime":            1499746242329734,
+          "status":               "open",
+          "entryOrder":           {
+            "e7bf5f70-65ee-11e7-bb6c-afbfacc90086": 1
+          },
+          "orderType":            "STP",
+          "targetPrice":          "NONE",
+          "instrument":           "BTCUSD7N14",
+          "oco":                  "e7c727a0-65ee-11e7-8a67-e024f1f45426",
+          "maxStop":              -2,
+          "entryPrice":           2308.2,
+          "entryAmount":          4332380,
+          "commission":           0.0005,
+          "reward":               0,
+          "cushion":              2,
+          "reservedTicks":        2,
+          "crossMargin":          false,
+          "normalizedEntryPrice": 4332380,
+          "normalizedMaxStop":    -5000000000
+        },
+        "e7c727a0-65ee-11e7-8a67-e024f1f45426": {
+          "uuid":                 "e7c727a0-65ee-11e7-8a67-e024f1f45426",
+          "userid":               "moVB8e8oWX1oKjaaesdimAGqJHxjih8kjU",
+          "side":                 "sell",
+          "quantity":             1,
+          "filled":               0,
+          "cancelled":            0,
+          "price":                "NONE",
+          "normalizedPrice":      "NONE",
+          "averagePrice":         0,
+          "entryTime":            1499746242330106,
+          "eventTime":            1499746242330106,
+          "status":               "open",
+          "entryOrder":           {
+            "e7bf5f70-65ee-11e7-bb6c-afbfacc90086": 1
+          },
+          "orderType":            "TGT",
+          "targetPrice":          "NONE",
+          "instrument":           "BTCUSD7N14",
+          "oco":                  "e7c70090-65ee-11e7-9af1-f4f5db91850d",
+          "entryPrice":           2308.2,
+          "entryAmount":          4332380,
+          "commission":           0.0005,
+          "reward":               0,
+          "cushion":              2,
+          "reservedTicks":        2,
+          "crossMargin":          false,
+          "normalizedEntryPrice": 4332380
+        }
+      },
+      "BTCUSD7N21":      {},
+      "MBTCUSD7N111620": {},
+      "MBTCUSD7N111625": {}
+    },
+    "pnl":         {
+      "userid":     "moVB8e8oWX1oKjaaesdimAGqJHxjih8kjU",
+      "accountid":  "2NGJqK6fXWfMMtJwWHdKT59WzqKDxFKagJp",
+      "pnl":        -2166,
+      "commission": 2166
+    },
+    "positions":   {
+      "BTCUSD7N14": {
+        "userid":       "moVB8e8oWX1oKjaaesdimAGqJHxjih8kjU",
+        "instrument":   "BTCUSD7N14",
+        "averagePrice": 2308.2,
+        "quantity":     1,
+        "entryAmount":  -4332380,
+        "commission":   0
+      }
+    },
+    "margin":      13121439
+  },
+  "bands":       {
+    "BTCUSD7N14":      {
+      "price":        2354,
+      "min":          2330.5,
+      "max":          2377.5,
+      "instrument":   "BTCUSD7N14"
+    },
+    "BTCUSD7N21":      {
+      "price":        2354,
+      "min":          2330.5,
+      "max":          2377.5,
+      "instrument":   "BTCUSD7N21"
+    },
+    "MBTCUSD7N111615": {
+      "price":        2354,
+      "min":          2344,
+      "max":          2364,
+      "instrument":   "MBTCUSD7N111615"
+    },
+    "MBTCUSD7N111620": {
+      "price":        2354,
+      "min":          2344,
+      "max":          2364,
+      "instrument":   "MBTCUSD7N111620"
+    }
+  },
+  "instruments": {
+    "BTCUSD7N14":      {
+      "type":                       "inverse",
+      "template":                   "BTCUSD",
+      "commission":                 0.0005,
+      "reward":                     0,
+      "stopcushion":                2,
+      "stopprice":                  2,
+      "targetprice":                3,
+      "crossMarginInitialStop":     50,
+      "ticksize":                   1,
+      "ticksperpoint":              10,
+      "contractusdvalue":           100,
+      "bandUpperLimit":             0.01,
+      "bandLowerLimit":             0.01,
+      "introducerReward":           0,
+      "introducedReward":           0,
+      "rewardsCalculationInterval": 14400,
+      "minMarketStop":              1.6,
+      "minLimitStop":               1.6,
+      "uplDecimalPlaces":           8,
+      "externalFeed":               "coinpit-index#BTCUSD",
+      "expiryClass":                "weekly",
+      "maxLeverage":                100,
+      "symbol":                     "BTCUSD7N14",
+      "start":                      1498842900000,
+      "expiry":                     1500052500000,
+      "next":                       "BTCUSD7N21",
+      "status":                     "active"
+    },
+    "BTCUSD7N21":      {
+      "type":                       "inverse",
+      "template":                   "BTCUSD",
+      "commission":                 0.0005,
+      "reward":                     0,
+      "stopcushion":                2,
+      "stopprice":                  2,
+      "targetprice":                3,
+      "crossMarginInitialStop":     50,
+      "ticksize":                   1,
+      "ticksperpoint":              10,
+      "contractusdvalue":           100,
+      "bandUpperLimit":             0.01,
+      "bandLowerLimit":             0.01,
+      "introducerReward":           0,
+      "introducedReward":           0,
+      "rewardsCalculationInterval": 14400,
+      "minMarketStop":              1.6,
+      "minLimitStop":               1.6,
+      "uplDecimalPlaces":           8,
+      "externalFeed":               "coinpit-index#BTCUSD",
+      "expiryClass":                "weekly",
+      "maxLeverage":                100,
+      "symbol":                     "BTCUSD7N21",
+      "start":                      1499447700000,
+      "expiry":                     1500657300000,
+      "next":                       "BTCUSD7N28",
+      "status":                     "active"
+    },
+    "MBTCUSD7N111615": {
+      "type":                       "inverse",
+      "template":                   "MBTCUSD",
+      "commission":                 0.0005,
+      "reward":                     0,
+      "stopcushion":                1,
+      "stopprice":                  2,
+      "targetprice":                3,
+      "crossMarginInitialStop":     50,
+      "ticksize":                   1,
+      "ticksperpoint":              10,
+      "contractusdvalue":           100,
+      "bandUpperLimit":             10,
+      "bandLowerLimit":             10,
+      "introducerReward":           0,
+      "introducedReward":           0,
+      "rewardsCalculationInterval": 14400,
+      "minMarketStop":              1.6,
+      "minLimitStop":               1.6,
+      "uplDecimalPlaces":           4,
+      "externalFeed":               "coinpit-index#BTCUSD",
+      "expiryClass":                "fiveMinutes",
+      "maxLeverage":                200,
+      "symbol":                     "MBTCUSD7N111615",
+      "start":                      1499789100000,
+      "expiry":                     1499789700000,
+      "next":                       "MBTCUSD7N111620",
+      "status":                     "active"
+    },
+    "MBTCUSD7N111620": {
+      "type":                       "inverse",
+      "template":                   "MBTCUSD",
+      "commission":                 0.0005,
+      "reward":                     0,
+      "stopcushion":                1,
+      "stopprice":                  2,
+      "targetprice":                3,
+      "crossMarginInitialStop":     50,
+      "ticksize":                   1,
+      "ticksperpoint":              10,
+      "contractusdvalue":           100,
+      "bandUpperLimit":             10,
+      "bandLowerLimit":             10,
+      "introducerReward":           0,
+      "introducedReward":           0,
+      "rewardsCalculationInterval": 14400,
+      "minMarketStop":              1.6,
+      "minLimitStop":               1.6,
+      "uplDecimalPlaces":           4,
+      "externalFeed":               "coinpit-index#BTCUSD",
+      "expiryClass":                "fiveMinutes",
+      "maxLeverage":                200,
+      "symbol":                     "MBTCUSD7N111620",
+      "start":                      1499789400000,
+      "expiry":                     1499790000000,
+      "next":                       "MBTCUSD7N111625",
+      "status":                     "active"
+    }
+  }
+}
+

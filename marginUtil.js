@@ -33,8 +33,10 @@ module.exports = (function () {
       if (!instrument) return console.log("########### marginUtil.computeAvailableMargin", symbol, Object.keys(orders), instruments.symbols())
 
       Object.keys(orders[symbol]).forEach(function (uuid) {
-        var order = orders[symbol][uuid]
-        marginUsedByOrders += instrument.calculateMarginRequiredByOrder(order, bands, isMinCrossStop)
+        var order               = orders[symbol][uuid]
+        var marginRequired = instrument.calculateMarginRequiredByOrder(order, bands, isMinCrossStop)
+        console.log(marginRequired, order.orderType)
+        marginUsedByOrders += marginRequired
       })
     })
     return marginUsedByOrders
