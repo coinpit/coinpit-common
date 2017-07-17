@@ -35,7 +35,7 @@ module.exports = (function () {
       Object.keys(orders[symbol]).forEach(function (uuid) {
         var order               = orders[symbol][uuid]
         var marginRequired = instrument.calculateMarginRequiredByOrder(order, bands, isMinCrossStop)
-        console.log(marginRequired, order.orderType)
+        // console.log(marginRequired, order.orderType)
         marginUsedByOrders += marginRequired
       })
     })
